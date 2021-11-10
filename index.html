@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi PageLook</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Varela+Round&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="page-full">
+        <div id="home" class="form-full">
+            <div class="btn-lr">
+                <button type="button" id="login" class="btn-fs btn-active">iniciar sesión</button>
+                <button type="button" id="register" class="btn-fs">registrarse</button>
+            </div>
+            <div class="pgs">
+                <div class="pg-login" id="pg-login">
+                    <p class="titles">iniciar sesión</p>
+                    <input type="email" name="email" id="email" placeholder="Correo Electronico" autocomplete= "off" required><br>
+                    <input type="password" name="password" id="password" placeholder="Contraseña" maxlength=8 autocomplete= "off" required><br>
+                    <button id="ir-b" type="submit" class="btn-fs-w btn-active">iniciar sesión</button>
+                    <p id="msg-error"></p>
+                </div>
+                <div class="pg-register" id="pg-register">
+                    <p class="titles">registrarme</p>
+                    <input type="text" name="nombre" id="nombre1" placeholder="Nombre" autocomplete= "off" required><br>
+                    <input type="email" name="email" id="email1" placeholder="Email" autocomplete= "off" required>
+                    <input type="text" name="password1" id="password1" placeholder="Contraseña" maxlength=8 autocomplete= "off" required>
+                    <button id="ir-re" type="submit" class="btn-fs-w btn-active">registrarme</button>
+                    <p id="msg-error1"></p>
+                </div>
+            </div>            
+        </div>
+        <div id="welcome" class="form-full">
+            <img src="./img/AMC.gif"></img>
+            <h1>bienvenid@ "<span id="Nombre"></span>" a mi sitio web</h1>
+            <p>Gracias por volver.</p>
+            <button id="cerrar" type="button" class="btn-fs-w btn-active">cerrar sesión</button>
+        </div>
+        <div id="pg-register-cp" class="form-full">
+            <img src="./img/AMC.gif"></img>
+            <h1>registro exitoso</h1>
+            <p>te estabamos esperando.</p>
+            <button id="ir-is" type="button" class="btn-fs-w btn-active">iniciar sesión</button>
+        </div>
+        </div>        
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
